@@ -1,0 +1,16 @@
+.App {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loading-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--bg-main);
+}
+
+* {
+  box-sizing: border-box;
+}

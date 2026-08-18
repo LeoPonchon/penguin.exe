@@ -1,0 +1,255 @@
+.server-list {
+  width: 72px;
+  background: #1e1f22;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 0;
+  gap: 8px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.server-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.server-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.server-list::-webkit-scrollbar-thumb {
+  background: #2b2d31;
+  border-radius: 2px;
+}
+
+.server-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  background-color: #313338;
+}
+
+.server-icon:hover {
+  border-radius: 16px;
+  background-color: #5865f2;
+}
+
+.server-icon.active {
+  border-radius: 16px;
+  background-color: #5865f2;
+}
+
+.server-icon.add-server {
+  background-color: #313338;
+  color: #23a559;
+}
+
+.server-icon.add-server:hover {
+  background-color: #23a559;
+  color: white;
+}
+
+.server-icon.join-server {
+  background-color: #313338;
+  color: #23a559;
+}
+
+.server-icon.join-server:hover {
+  background-color: #23a559;
+  color: white;
+}
+
+.server-separator {
+  width: 32px;
+  height: 2px;
+  background: #35363c;
+  border-radius: 1px;
+  margin: 4px 0;
+}
+
+.server-menu {
+  position: absolute;
+  left: 64px;
+  top: 0;
+  background: #313338;
+  border-radius: 4px;
+  padding: 8px 0;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24);
+  z-index: 9999;
+}
+
+.server-menu.fixed {
+  position: fixed;
+}
+
+.server-menu::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 12px;
+  width: 8px;
+  height: 8px;
+  background: #313338;
+  transform: rotate(45deg);
+}
+
+.server-menu button {
+  width: 100%;
+  padding: 10px 16px;
+  border: none;
+  background: none;
+  color: #b5bac1;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.server-menu button:hover {
+  background: #5865f2;
+  color: white;
+}
+
+.server-menu button.danger {
+  color: #ed4245;
+}
+
+.server-menu button.danger:hover {
+  background: #ed4245;
+  color: white;
+}
+
+.invite-modal {
+  padding: 24px;
+  text-align: center;
+}
+
+.invite-modal h3 {
+  margin: 0 0 16px 0;
+  color: #f2f3f5;
+}
+
+.invite-code {
+  background: #1e1f22;
+  padding: 16px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 24px;
+  color: #5865f2;
+  margin-bottom: 8px;
+  user-select: all;
+}
+
+.invite-hint {
+  color: #b5bac1;
+  font-size: 14px;
+  margin: 0 0 20px 0;
+}
+
+.invites-modal {
+  padding: 24px;
+}
+
+.invites-modal h3 {
+  margin: 0 0 20px 0;
+  color: #f2f3f5;
+}
+
+.invites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.no-invites {
+  color: #b5bac1;
+  text-align: center;
+  padding: 20px;
+}
+
+.invite-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background: #1e1f22;
+  border-radius: 4px;
+  gap: 12px;
+}
+
+.invite-item-code {
+  font-family: monospace;
+  font-size: 16px;
+  color: #5865f2;
+  cursor: pointer;
+  user-select: all;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.invite-item-code:hover {
+  color: #7983f5;
+}
+
+.invite-item-code.copied {
+  color: #23a559;
+  font-size: 14px;
+}
+
+.invite-item-info {
+  color: #b5bac1;
+  font-size: 12px;
+}
+
+.invites-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.confirm-modal {
+  padding: 24px;
+  text-align: center;
+}
+
+.confirm-modal h3 {
+  margin: 0 0 12px 0;
+  color: #f2f3f5;
+}
+
+.confirm-modal p {
+  color: #b5bac1;
+  margin: 0 0 24px 0;
+}
+
+.confirm-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn-primary.danger {
+  background: #ed4245;
+}
+
+.btn-primary.danger:hover {
+  background: #c73c3f;
+}

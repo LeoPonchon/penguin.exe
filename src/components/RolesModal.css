@@ -1,0 +1,286 @@
+.roles-modal {
+  width: 100%;
+  max-width: 800px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.roles-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #3f4147;
+  margin-bottom: 20px;
+}
+
+.roles-modal-header h2 {
+  margin: 0;
+  color: #f2f3f5;
+}
+
+.roles-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: auto;
+}
+
+/* Create role section */
+.role-create {
+  background: #1e1f22;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.role-create h3 {
+  margin: 0 0 16px 0;
+  color: #f2f3f5;
+}
+
+.role-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.role-form input[type="text"] {
+  width: 100%;
+  background: #1e1f22;
+  border: 1px solid #3f4147;
+  border-radius: 4px;
+  padding: 12px;
+  color: #dbdee1;
+  font-size: 16px;
+}
+
+.role-form input:focus {
+  outline: none;
+  border-color: #5865f2;
+}
+
+.color-picker {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.color-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-btn:hover {
+  transform: scale(1.1);
+}
+
+.color-btn.selected {
+  border-color: white;
+  box-shadow: 0 0 0 2px #5865f2;
+}
+
+.permissions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 12px;
+  background: #2b2d31;
+  border-radius: 4px;
+}
+
+.permission-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #dbdee1;
+  cursor: pointer;
+}
+
+.permission-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Roles list */
+.roles-list h3 {
+  color: #f2f3f5;
+  margin: 0 0 12px 0;
+}
+
+.no-roles {
+  color: #b5bac1;
+  text-align: center;
+  padding: 20px;
+}
+
+.role-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #2b2d31;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.role-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.role-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.role-name {
+  color: #f2f3f5;
+  font-weight: 500;
+}
+
+.role-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Members section */
+.members-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.members-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.member-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  background: #2b2d31;
+  border-radius: 4px;
+}
+
+.member-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5865f2;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.member-name {
+  color: #f2f3f5;
+  flex: 1;
+}
+
+.member-role {
+  color: #b5bac1;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+/* Edit role overlay */
+.edit-role-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.edit-role-modal {
+  background: #313338;
+  padding: 24px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.edit-role-modal h3 {
+  margin: 0 0 16px 0;
+  color: #f2f3f5;
+}
+
+.edit-role-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn-secondary,
+.btn-primary {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #f2f3f5;
+}
+
+.btn-secondary:hover {
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background: #5865f2;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #4752c4;
+}
+
+.btn-primary.danger {
+  background: #ed4245;
+}
+
+.btn-primary.danger:hover {
+  background: #c73c3f;
+}

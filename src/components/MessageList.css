@@ -1,0 +1,41 @@
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  gap: 8px;
+}
+
+.empty-state p {
+  margin: 0;
+}
+
+.message-group {
+  padding: 4px 20px;
+  transition: all var(--transition-fast);
+  border-left: 3px solid transparent;
+  margin-left: 17px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.message-group:hover {
+  background: var(--bg-hover);
+  border-left-color: var(--accent-primary);
+}
+
+.message-group:first-child {
+  padding-top: 20px;
+}
+
+.message-group:last-child {
+  padding-bottom: 20px;
+}

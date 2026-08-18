@@ -1,0 +1,296 @@
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background: #313338;
+}
+
+.dashboard-header {
+  padding: 40px;
+  background: linear-gradient(135deg, #5865f2 0%, #7983f5 100%);
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 8px 0;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.dashboard-header p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.dashboard-section {
+  background: #2b2d31;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.dashboard-section h2 {
+  margin: 0 0 20px 0;
+  color: #f2f3f5;
+  font-size: 20px;
+}
+
+/* Quick actions */
+.quick-actions .action-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.action-btn.primary {
+  background: #5865f2;
+  color: white;
+}
+
+.action-btn.primary:hover {
+  background: #4752c4;
+  transform: translateY(-2px);
+}
+
+.action-btn.secondary {
+  background: #4f545c;
+  color: white;
+}
+
+.action-btn.secondary:hover {
+  background: #6d6f78;
+  transform: translateY(-2px);
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.empty-state svg {
+  margin-bottom: 16px;
+}
+
+.empty-state h3 {
+  margin: 0 0 8px 0;
+  color: #f2f3f5;
+  font-size: 20px;
+}
+
+.empty-state p {
+  margin: 0;
+  color: #b5bac1;
+}
+
+/* Servers grid */
+.servers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.server-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: #1e1f22;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.server-card:hover {
+  background: #282a2d;
+  transform: translateY(-2px);
+}
+
+.server-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.server-card-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.server-card-info h3 {
+  margin: 0 0 4px 0;
+  color: #f2f3f5;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.server-card-info p {
+  margin: 0;
+  color: #b5bac1;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Getting started */
+.getting-started h2 {
+  margin-bottom: 24px;
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #5865f2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-content h3 {
+  margin: 0 0 4px 0;
+  color: #f2f3f5;
+  font-size: 16px;
+}
+
+.step-content p {
+  margin: 0;
+  color: #b5bac1;
+  font-size: 14px;
+}
+
+/* Friends grid */
+.friends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.friend-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #1e1f22;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.friend-card:hover {
+  background: #282a2d;
+}
+
+.friend-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.friend-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.friend-info h3 {
+  margin: 0 0 2px 0;
+  color: #f2f3f5;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.friend-info p {
+  margin: 0;
+  color: #b5bac1;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.message-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #5865f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.message-btn:hover {
+  background: #4752c4;
+  transform: translateY(-1px);
+}
+
+.message-btn svg {
+  flex-shrink: 0;
+}
